@@ -22,7 +22,7 @@ public class HeapsortDescending {
         heap[0] = Integer.MIN_VALUE; //infinite variable
         HeapsortDescending a = new HeapsortDescending();
         for(int i=1; i<heap.length;i++){
-            a.minHeap(heap[i],heap); //create the maxHeap of the array
+            a.minHeap(heap[i],heap); //create the minHeap of the array
         }
         for(int i=heap.length-1;i>=1;i--){
             heap[i] = a.HeapSort(heap); //sort the array in mode descending
@@ -30,7 +30,7 @@ public class HeapsortDescending {
         System.out.println("heapsort:  " + Arrays.toString(heap)); // print the sorted array
     }
     
-    //this function makes the maxHeap of the array
+    //this function makes the minHeap of the array
     public void minHeap(int number,int heap[]){
         size++;
         int son = size;
